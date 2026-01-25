@@ -1,0 +1,34 @@
+# ChittyConcierge - Canonical Core
+# URI: chittycanon://platform/services/concierge
+# Organization: CHITTYOS
+# Tier: 4 (Domain - Business Logic)
+
+name = "chittyconcierge"
+main = "src/worker.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+account_id = "0bc21e3a5a9de1a4cc843be9c3e98121"  # ChittyCorp LLC
+
+workers_dev = true
+
+[[routes]]
+pattern = "concierge.chitty.cc/*"
+zone_name = "chitty.cc"
+
+[ai]
+binding = "AI"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "chico-db"
+database_id = "2b35db5e-5269-44d4-afb5-a2044a5c46f0"
+
+[[kv_namespaces]]
+binding = "CONCIERGE_KV"
+id = "d37db3ca5a8f4750b987d5fd7922bf56"
+
+[vars]
+ENVIRONMENT = "production"
+SERVICE_NAME = "chittyconcierge"
+CANONICAL_URI = "chittycanon://platform/services/concierge"
+CHITTYCONNECT_URL = "https://connect.chitty.cc"
