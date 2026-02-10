@@ -17,7 +17,7 @@
   "author": "ChittyOS",
   "license": "MIT",
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20241205.0",
+    "@cloudflare/workers-types": "^4.20260207.0",
     "typescript": "^5.3.3",
     "wrangler": "^3.99.0"
   },
