@@ -24,4 +24,4 @@ jobs:
         run: npx tsc --noEmit 2>&1 || true
 
       - name: Validate wrangler config
-        run: npx wrangler deploy --dry-run 2>&1 || true
+        run: npx cf deploy --dry-run 2>&1 || true
