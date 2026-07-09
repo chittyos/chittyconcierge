@@ -5,7 +5,7 @@
   "main": "src/worker.ts",
   "scripts": {
     "dev": "wrangler dev",
-    "deploy": "cf deploy",
+    "deploy": "wrangler deploy",
     "typecheck": "tsc --noEmit"
   },
   "keywords": [
